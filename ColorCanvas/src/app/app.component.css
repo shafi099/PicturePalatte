@@ -1,0 +1,141 @@
+.Head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5%;
+    /* margin-left: 5%;
+    margin-top:2%; */
+    padding: 2% 5% 2% 5%;
+}
+
+.logoName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.Head span img {
+    width: 35px;
+    height: 35px;
+}
+
+.PageName {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+    /* font-variant: italic; */
+}
+
+.NavBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(228, 228, 228);
+    letter-spacing: 2px;
+}
+
+.OneLineInfo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ColorTextPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 1.5%
+}
+
+.ColorTextPortion span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Colortxt {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px solid transparent;
+    /* padding-left:50px; */
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.Sometext {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: white;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%
+}
+
+.generate {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate img {
+    width: 17px;
+    height: 17px;
+    margin-left: 6px;
+}
+
+.generate button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: inset 20px 20px 60px #bebebe,
+        inset -20px -20px 60px #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    /* text-shadow: 0.5px 0.5px 0px #808080; */
+    color: rgb(2, 2, 2);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.generate button:hover {
+    width: 180px;
+}
+
+.bodyBg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #3d0434, #330b37, #290f38, #1f1238, #141436, #1f1436, #281335, #301334, #46112c, #53171f, #572410, #523500);
+
+}
