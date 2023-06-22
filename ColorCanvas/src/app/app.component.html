@@ -5,13 +5,13 @@
       <span>
         <img src="../../assets/Icon.png">
       </span>
-      <span class="PageName">PicturePalette</span>
+      <span class="PageName">CreativeCanvas</span>
     </div>
 
     <div class="NavBtns">
-      <span><i class="fa fa-github" aria-hidden="true" style="font-size:22px;color:white;"></i></span>
-      <span><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:22px;color:white;"></i></span>
-      <span><i class="fa fa-paper-plane" aria-hidden="true" style="font-size:20px;color:white;"></i></span>
+      <span><a href='https://github.com/shafi099' ><i class="fa fa-github" aria-hidden="true" style="font-size:22px;color:white;"></i></a></span>
+      <span><a href='https://www.linkedin.com/in/shaik-shafi-eluru/' ><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:22px;color:white;"></i></a></span>
+      <span><a href='mailto:shaikshafieluru@gmail.com' ><i class="fa fa-paper-plane" aria-hidden="true" style="font-size:20px;color:white;"></i></a></span>
     </div>
 
 
@@ -21,6 +21,60 @@
   <div class="OneLineInfo">
     👋 Create vibrant CSS backgrounds with custom color palettes using our interactive input box
   </div>
+
+  <div class="Sometext">
+    Pick your orientation
+  </div>
+  <div class="orientation">
+    <span>
+      <button [ngStyle]="selectedButton === 'topRight' ? buttonStylesRound : buttonStyles" (click)="selectButton('topRight', 'to right top')">
+        to right top <i class="fa fa-arrow-up" aria-hidden="true" style="transform: rotate(45deg);"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'bottomRight' ? buttonStylesRound : buttonStyles" (click)="selectButton('bottomRight', 'to right bottom')">
+        to right bottom <i class="fa fa-arrow-up" aria-hidden="true" style="transform: rotate(135deg);"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'bottomLeft' ? buttonStylesRound : buttonStyles" (click)="selectButton('bottomLeft','to left bottom')">
+        to left bottom <i class="fa fa-arrow-up" aria-hidden="true" style="transform: rotate(225deg);"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'topLeft' ? buttonStylesRound : buttonStyles" (click)="selectButton('topLeft', 'to left top')">
+        to left top <i class="fa fa-arrow-up" aria-hidden="true" style="transform: rotate(-45deg);"></i>
+      </button>
+    </span>
+  
+    <span>
+      <button [ngStyle]="selectedButton === 'top' ? buttonStylesRound : buttonStyles" (click)="selectButton('top', 'to top')">
+        to top <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'right' ? buttonStylesRound : buttonStyles" (click)="selectButton('right', 'to right')">
+        to right <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'down' ? buttonStylesRound : buttonStyles" (click)="selectButton('down', 'to bottom')">
+        to bottom <i class="fa fa-arrow-down" aria-hidden="true"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'left' ? buttonStylesRound : buttonStyles" (click)="selectButton('left', 'to left')">
+        to left <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+    </span>
+    <span>
+      <button [ngStyle]="selectedButton === 'circle' ? buttonStylesRound : buttonStyles" (click)="selectButton('circle', 'circle')">
+        radial circle <i class="fa fa-undo" aria-hidden="true"></i>
+      </button>
+    </span>
+  </div>
+  
+  
 
   <div class="Sometext">
     Enter Hex Values
@@ -41,20 +95,20 @@
   </div>
 
   <div class="Sometext">
-    Or use color picker
+    Or, use color picker
   </div>
 
   <div class="ColorTextPortion">
     <span>
-      <input type="color" value={{colorBox1}} [style]="colortxtStyles1" [style]="colortxtStyles1"
+      <input type="color" value={{colorBox1.toUpperCase()}} [style]="colortxtStyles1" [style]="colortxtStyles1"
         (input)="changeColor(1, $event)" [style.backgroundColor]="colorBox1">
     </span>
     <span>
-      <input type="color" value={{colorBox2}} [style]="colortxtStyles2" (input)="changeColor(2, $event)"
+      <input type="color" value={{colorBox2.toUpperCase()}} [style]="colortxtStyles2" (input)="changeColor(2, $event)"
         [style.backgroundColor]="colorBox2">
     </span>
     <span>
-      <input type="color" value={{colorBox3}} [style]="colortxtStyles3" (input)="changeColor(3, $event)"
+      <input type="color" value={{colorBox3.toUpperCase()}} [style]="colortxtStyles3" (input)="changeColor(3, $event)"
         [style.backgroundColor]="colorBox3">
     </span>
   </div>
@@ -65,7 +119,7 @@
   </div>
 
   <div class="result">
-    background-image: {{Background}};<button (click)="copyText()">Copy<i class="fa fa-files-o" aria-hidden="true" style="margin-left:4px;font-size:16px;color:white;"></i></button>
+    background-image: {{Background}};<button (click)="copyText()">Copy<i class="fa fa-files-o" aria-hidden="true" style="margin-left:4px;font-size:16px;color:black;"></i></button>
   </div>
 
   <div class="OneLineInfo">

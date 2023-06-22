@@ -8,10 +8,10 @@
 .Head {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 3.5%;
-    padding: 2% 5% 2% 5%;
+    padding: 1.5% 8% 1% 8%;
 }
 
 .logoName {
@@ -29,10 +29,10 @@
 
 .PageName {
     font-family: 'Clash Display', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
     color: white;
-    letter-spacing: 2px;
+    /* letter-spacing: 1px; */
     /* font-variant: italic; */
 }
 
@@ -59,7 +59,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: white;
-    margin-top: 2.5%;
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +137,7 @@
     color: rgb(2, 2, 2);
     transition: all 0.3s ease;
     letter-spacing: 1px;
+    cursor:pointer;
 }
 
 .generate button:hover {
@@ -186,16 +187,19 @@ input[type="color"] {
     font-weight: 600;
     font-size: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right:2%;
+    padding-left:2%;
     align-items: center;
     margin-top:5%;
     margin-right:25%;
     margin-left:25%;
-    height:40px;
-    border-radius:8px;
+    height:50px;
+    border-radius:12px;
     color:white;
     gap:2%;
     background-color: #09090979;
+    /* box-shadow:2px 2px 2px rgba(42, 42, 42, 0.63); */
   }
   .result button{
     display: flex;
@@ -203,14 +207,38 @@ input[type="color"] {
     align-items: center;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 14px;
-    color:white;
-    background-color: green;
+    color:black;
+    background-color: white;
+    /* background-color: rgb(201, 201, 201); */
     border:none;
-    padding:4px 6px;
+    cursor:pointer;
+    padding:5px 20px;
   }
   .result button:hover{
-    background-color: rgb(0, 65, 0);
+    background-color: #9e9e9e;
   }
  
+  .orientation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1%;
+    margin-top:1%;
+  }
+  /* .orientation span button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    padding:5px 10px;
+    box-shadow:2px 2px 5px rgba(1, 1, 1, 0.595);
+    background: linear-gradient(270deg, #eceaea, #ffffff);
+  }
+   */
