@@ -94,13 +94,13 @@ export class AppComponent {
   }
   changeGradient(grad:string){
     this.gradient=grad;
-    // console.log(grad)
+    this.linearRadial ='linear-gradient'
     this.generateBackground();
   }
 
   copyText() {
     const tempElement = document.createElement('textarea');
-    tempElement.value = this.Background;
+    tempElement.value = 'background-image: ' + this.Background;
     document.body.appendChild(tempElement);
     tempElement.select();
     document.execCommand('copy');
@@ -147,7 +147,9 @@ export class AppComponent {
     if(gradVal=='circle'){
       this.circleGradient()
     }
-    else{this.changeGradient(gradVal);}
+    else{
+      this.changeGradient(gradVal);
+    }
     
   }
   
