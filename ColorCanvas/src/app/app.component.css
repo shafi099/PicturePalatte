@@ -191,7 +191,7 @@ input[type="color"] {
     padding-right:2%;
     padding-left:2%;
     align-items: center;
-    margin-top:5%;
+    margin-top:0.5%;
     margin-right:25%;
     margin-left:25%;
     height:50px;
@@ -204,7 +204,7 @@ input[type="color"] {
   .result button{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:end;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     border-radius: 15px;
@@ -227,6 +227,15 @@ input[type="color"] {
     gap:1%;
     margin-top:1%;
   }
+  .copyText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:4%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+  }
   /* .orientation span button{
     display: flex;
     justify-content: center;
@@ -242,3 +251,13 @@ input[type="color"] {
     background: linear-gradient(270deg, #eceaea, #ffffff);
   }
    */
+
+   .CanvasPng{
+    position: fixed;
+    bottom: 90px;
+    right: 0;
+    /* width: 100%; */
+   }
+   .CanvasPng img{
+    height:35vh
+   }
